@@ -8,16 +8,16 @@ class Config(object):
 
     POSTGRES = {
         'user': 'postgres',
-        'pw': 'acehuman98',
-        'db': 'WHO',
+        'pw': 'Shadowstone110',
+        'db': 'data',
         'host': 'localhost',
         'port': '5432',
     }
 
     MYSQL = {
         'user': 'root',
-        'pw': 'Ace_human98',
-        'db': 'WHO',
+        'pw': 'Shadowstone110',
+        'db': 'data',
         'host': 'localhost',
         'port': '3306'
     }
@@ -25,7 +25,7 @@ class Config(object):
     MONGO = {
         'user': 'root',
         'pw': '',
-        'db': 'WHO',
+        'db': 'data',
         'host': 'localhost',
         'port': '27017'
     }
@@ -33,7 +33,7 @@ class Config(object):
 
     SECRET_KEY = 'b=3=!0^96*8jhkvkfbqf*1!yn-9'
 
-    MONGO_DBNAME = 'WHO'
+    MONGO_DBNAME = 'data'
 
     MONGO_URI = 'mongodb://{host}:{port}/{db}'.format(**MONGO)
 
@@ -44,7 +44,7 @@ class Config(object):
     SQLALCHEMY_BINDS = {
         'postgres_bind': SQLALCHEMY_DATABASE_URI,
         'mysql_bind': 'mysql+pymysql://{user}:{pw}@{host}:{port}/{db}'.format(**MYSQL),
-        'sqlite_bind': 'sqlite:///WHO.sqlite'
+        'sqlite_bind': 'sqlite:///data.sqlite'
     }
 
 

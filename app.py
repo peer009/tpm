@@ -5,8 +5,8 @@ from manage import app, mongo, GIS, EC, NHIS,db
 
 def add_user():
     user_1 = EC(
-        first_name="Aaron",
-        last_name="Essuman",
+        first_name="Richard",
+        last_name="Osei",
         age=22
     )
     user_2 = GIS(
@@ -30,8 +30,8 @@ def add_user():
         age=18
     )
     user_6 = NHIS(
-        first_name="Priscilla",
-        last_name="Owusu Prempeh",
+        first_name="Essuman",
+        last_name="Aaron",
         age=20
     )
 
